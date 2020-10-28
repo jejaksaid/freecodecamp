@@ -1,3 +1,4 @@
+/* Master styles */
 body {
 	margin: 0px;
 }
@@ -7,7 +8,7 @@ body {
 	grid-template-columns: 1fr;
 }
 
-
+/* Nav sttyles */
 
 .nav-wrapper {
 	display: flex;
@@ -46,3 +47,6 @@ body {
 	color: black;
 
 }
+
+/* portfolio styles */
+
