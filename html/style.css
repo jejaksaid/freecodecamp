@@ -43,7 +43,7 @@ body {
 	border-bottom: 1px solid black;
 }
 
-.nav-link-wrapper:hover {
+.nav-link-wrapper a:hover {
 	color: black;
 
 }
