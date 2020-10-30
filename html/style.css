@@ -1,53 +1,81 @@
-/* Master styles */
-body {
-	margin: 0px;
+/* base styles */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
 }
 
-.container {
+body {
+	margin: 0;
+	padding: 0;
+	color: #8a8a8a;
+	font-family: "Lato", sans-serif;
 	display: grid;
 	grid-template-columns: 1fr;
 }
 
-/* Nav sttyles */
+/* Nav styles */
+/*
+.container {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+*/
 
-.nav-wrapper {
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	width: 100%;
+	background-color: white;
 	display: flex;
 	justify-content: space-between;
 	padding: 38px;
 }
-
-.left-side {
+  
+.nav-links {
 	display: flex;
-
 }
-
-.nav-wrapper > .left-side > div {
+  
+nav .nav-links div {
 	margin-right: 20px;
 	font-size: 0.9em;
 	text-transform: uppercase;
 }
-
-.nav-link-wrapper {
+  
+.brand {
+	text-transform: uppercase;
+}
+  
+.nav-link {
 	height: 22px;
-	border-bottom: 1px solid transparent;
+	border: 1px solid transparent;
 	transition: border-bottom 0.5s;
 }
-
-.nav-link-wrapper a {
-	color: #8a8a8a;
+  
+.nav-link a {
 	text-decoration: none;
+	color: inherit;
 	transition: color 0.5s;
 }
-
-.nav-link-wrapper:hover {
+  
+.nav-link:hover {
 	border-bottom: 1px solid black;
 }
-
-.nav-link-wrapper a:hover {
+  
+.nav-link a:hover {
 	color: black;
-
 }
-
+  
+.active-nav-link {
+	border-bottom: 1px solid black;
+}
+  
+.active-nav-link a {
+	color: black !important;
+}
 /* portfolio styles */
 
 .portfolio-items-wrapper {
