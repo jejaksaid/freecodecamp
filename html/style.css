@@ -76,11 +76,16 @@ nav .nav-links div {
 .active-nav-link a {
 	color: black !important;
 }
+
 /* portfolio styles */
 
-.portfolio-items-wrapper {
+main {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+	position: relative;
 }
 
 .portfolio-img-background {
@@ -109,12 +114,17 @@ nav .nav-links div {
 	margin-bottom: 20px;
 }
 
+/* Portfolio Styles */
+
+main {
+	margin-top: 98px;
+}
+
 .img-text-wrapper .subtitle {
 	transition: 1s;
 	font-weight: 600;
 	color: transparent;
 }
-
 
 .img-text-wrapper:hover .subtitle {
 	font-weight: 600;
@@ -124,4 +134,10 @@ nav .nav-links div {
 .img-darken {
 	transform: 1s;
 	filter: brightness(10%);
+}
+
+/* About Styles */
+
+main.about {
+	
 }
