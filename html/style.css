@@ -139,5 +139,35 @@ main {
 /* About Styles */
 
 main.about {
-	
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.profile-img img {
+	width: 100%;
+}
+
+.profile-content {
+	padding: 30px;
+}
+
+.profile-content h1 {
+	color: lightseagreen;
+}
+
+/* Footer Styles */
+
+footer {
+	width: 100%;
+	background: rgb(138, 138, 138, 0.7);
+	bottom: 0;
+	position: fixed;
+	height: 30px;
+	display: grid;
+	align-items: center;
+	justify-content: space-around;
+}
+
+footer div {
+	color: #eeeeee;
 }
